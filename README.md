@@ -11,4 +11,6 @@ Challenges we ran into
 
 As this was a Pitchathon we were more interested in developing the feasibility of our platform with the Indian markets. Hence we analyzed a lot of issues regarding renting guidelines and also the authenticity of crops. As the crops in the market place are grown through our platform, this can ensure the authenticity of every produce with the help of the underlying Blockchain Architecture. Also the recent ban uplift in India can also unveil the potential opportunities with crypto based payments. Our project is a web3 application built with Vue.js (2.6). We have built our Blockhain Architecture over Matic Networks Plasma Framework. This was primarily to scale our applications for the Indian markets and traffic. We also integrated crypto based payments from Matic Netowrk.
 
-We are now running an pre-alpha pilot for our android based app. Please visit the website below to register
+We are now running an pre-alpha pilot for our android based app. Please visit the website below to register.
+
+https://koushikbhargav.github.io/Organicblock
