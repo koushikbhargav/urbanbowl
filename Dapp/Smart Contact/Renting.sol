@@ -1,4 +1,4 @@
-pragma solidity ^0.6.1;
+pragma solidity ^5.1.1;
 contract RentalAgreement {
     /* This declares a new complex type which will hold the paid rents*/
     struct PaidRent {
