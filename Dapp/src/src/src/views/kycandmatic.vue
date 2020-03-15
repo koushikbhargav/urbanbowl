@@ -204,6 +204,20 @@ a {
 
 <script>
 ##JS
+const Matic = require('maticjs').default
+const config = require('./config')
+
+const from = config.FROM_ADDRESS 
+const recipient = '0xC4D5096C122fDb178EC1542BD701878171193BD7' 
+
+const matic = new Matic({
+  maticProvider: config.MATIC_PROVIDER,
+  parentProvider: config.PARENT_PROVIDER,
+  rootChainAddress: config.ROOTCHAIN_ADDRESS,
+  syncerUrl: config.SYNCER_URL,
+  watcherUrl: config.WATCHER_URL,
+})
+
 const Filestorage = require('@c/projects/eth denver/filestorage.js');
 const Web3 = require('web3');
  
@@ -255,12 +269,23 @@ async function getFiles(){
     );
   }
 
+matic.wallet = config.PRIVATE_KEY // prefix with `0x`
 
   async function deleteFile(fileName) {
     //create web3 connection
-    const web3Provider = new Web3.providers.HttpProvider(
-        "http://ethdenver0.skalenodes.com:10167"
-    );
+    const bn = require('bn.js')
+
+const utils = require('./utils')
+
+async function execute() {
+  const { matic } = await utils.getMaticClient('testnet', 'v3')
+  matic.setWallet(utils.getPrivateKey())
+
+  const amount = new bn(10).pow(new bn(17)) // 0.1 token
+  return matic.transferEther(process.env.FROM, amount, { from: process.env.FROM, parent: true }) // performing a self-transfer
+}
+
+execute().then(console.log) // eslint-disable-line
     let web3 = new Web3(web3Provider);
   
     //get filestorage instance
