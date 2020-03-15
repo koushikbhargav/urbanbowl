@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sell/ Buy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main id="container">
+	<card title="Sell" onclick="NewTab()">
+    
+  </card>
+	
+	<card title="Buy" onclick="NewTab()">
+  </card>
+</main>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
+<script src='https://unpkg.com/vuetify/dist/vuetify.min.css'></script><script  src="./script.js"></script>
+<script>
+
+function NewTab() { 
+            window.open( 
+              "https://srinivasteja15.github.io/form/", "_blank"); 
+        } 
+
+        Vue.component('card', {
+  template: `
+		<div class="card">
+			<h3 class="title">{{ title }}</h3>
+			<p>{{ content }}</p>
+		</div>
+	`,
+  props: ['title', 'content'] });
+
+
+new Vue({
+  el: '#container' });
+</script>
+</body>
+</html>
