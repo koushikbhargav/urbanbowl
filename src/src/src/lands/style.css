@@ -1,0 +1,65 @@
+.hotel-container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+          align-items: stretch;
+  width: 100%;
+}
+.hotel-container :hover {
+  text-decoration: none;
+}
+
+.hotel-card {
+  -webkit-box-flex: 1;
+          flex: 1 0 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-flow: column wrap;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 1em;
+  -webkit-box-flex: 0;
+          flex: 0 0 100%;
+}
+@media (min-width: 768px) {
+  .hotel-card {
+    flex-basis: 33%;
+  }
+}
+
+.hotel-card__description {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-flow: column wrap;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  -webkit-box-flex: 1;
+          flex: 1 0 auto;
+}
+
+.hotel-card__button {
+  margin-top: auto;
+  font-size: 24px;
+  font-weight: bolder;
+  border-top: 1px solid;
+  padding-left: 160px;
+}
+
+.hotel-card__price-rooms {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-flow: column wrap;
+  -webkit-box-flex: 1;
+          flex: 1 0 auto;
+}
