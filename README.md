@@ -10,4 +10,6 @@ Goal 15: Reduction in forest loss and land degradation
 Goal 13: Climate Action  
 Goal 12: Sustainable production pattern
 
-As this was a Pitchathon we were more intereseted in developing the feasiilty of our platform with the Indian markets. Hence we analyzed a lot of issues regarding renting guidelines and also authenticity of crops. As the crops in the market place are grown through our platform, this can esure the authenticity of every produce with the help of the underlying Blockchain Architecture. 
+As this was a Pitchathon we were more intereseted in developing the feasiilty of our platform with the Indian markets. Hence we analyzed a lot of issues regarding renting guidelines and also authenticity of crops. As the crops in the market place are grown through our platform, this can esure the authenticity of every produce with the help of the underlying Blockchain Architecture. Also the recent ban uplift in India can also unveil the potential oppurtunities with crypto based payments. Our project is a web3 application built with Vue.js (2.6). We have built our Blockhain Architecture over Matic Networks Plasma Framework. This was primarily to scale our applications for the Indian markets and traffic. We also integrated crypto based payments from Matic Netowrk. 
+
+We are now running an pre-alpha pilot for our android based app. Please visit the website below to register.
