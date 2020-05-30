@@ -13,5 +13,5 @@ As this was a Pitchathon we were more interested in developing the feasibility o
 
 We are now running an pre-alpha pilot for our android based app. Please visit the website below to register.
 
-https://koushikbhargav.github.io/urbanbowl
+https://koushikbhargav.github.io/urbanbowl/
 
